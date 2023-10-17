@@ -37,11 +37,11 @@ export const TodoList: React.FC = () => {
     const task = todo.find((item) => item.id === taskId);
     
     if (!task) {
-      return <div>Tâche non trouvée</div>;
+      return <div>Task not found</div>;
     }
 
     return (
-      <div>
+      <div className="tasks-element">
         <h2>{task.title}</h2>
         {task.description && <p>{task.description}</p>}
       </div>
@@ -50,7 +50,7 @@ export const TodoList: React.FC = () => {
 
   const handleAddTask = (newTitle: string) => {
     if (newTitle.trim() === "") {
-      alert("Le titre de la tâche est requis.");
+      alert("Task title is needeed.");
       return;
     }
 

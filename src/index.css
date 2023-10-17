@@ -4,7 +4,6 @@
     background-color:beige;
 }
 
-/* App Styles */
 .main-container {
     max-width: 600px;
     margin: 0 auto;
@@ -62,3 +61,11 @@
     background-color: #0056b3;
   }
   
+  .task-element {
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

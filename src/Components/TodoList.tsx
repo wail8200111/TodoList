@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Link, Routes, useParams } from "react-router-dom";
-
-interface Item {
-  id: number;
-  title: string;
-  description?: string;
-  completed: boolean;
-}
+import { Item } from "../../Interface/Item"
 
 export const TodoList: React.FC = () => {
   const [todo, setTodo] = useState<Item[]>([

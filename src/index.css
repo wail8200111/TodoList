@@ -62,10 +62,13 @@
   }
   
   .task-element {
-    border: 1px solid black;
+    border: 3px solid black;
+    width: 400px;
     text-align: center;
+    margin: 0 auto;
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }

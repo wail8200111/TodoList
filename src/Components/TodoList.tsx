@@ -41,8 +41,8 @@ export const TodoList: React.FC = () => {
     }
 
     return (
-      <div className="tasks-element">
-        <h2>{task.title}</h2>
+      <div className="task-element">
+        <h2>Task {task.id} : {task.title}</h2>
         {task.description && <p>{task.description}</p>}
       </div>
     );
